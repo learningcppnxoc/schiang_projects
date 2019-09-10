@@ -87,7 +87,7 @@ Write a program that asks the user to enter two numbers and tells the user which
 
 
 2 - 10.
-Explain each of the uses of std::in the following program :
+Explain each of the uses of std: :in the following program :
 int main() {
 	int k = 0;
 	while (k != n) {             // invariant: we have written k asterisks so far
@@ -98,4 +98,6 @@ int main() {
 	std::cout << std::endl;      // std:: is required here
 	return 0;
 }
+	
+
 **/

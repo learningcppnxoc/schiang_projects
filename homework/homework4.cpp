@@ -10,11 +10,12 @@ void question8();
 void question9();
 
 int main() {
-	//question4();
-	question5();
+	question4();
+	//question5();
 	//question7();
 	//question8();
 	//question9();
+
 	return 0;
 }
 
@@ -49,22 +50,24 @@ void question5() {
 	int height = 4;
 	int width = 5;
 
-	//square
+	////square
 		for (int i = 0; i < height; i++) {
 			cout << string(height, '*') << endl;
 	}
 
-	//rectangle
+	////rectangle
 		for (int i = 0; i < height; i++) {
 			cout << string(width, '*') << endl;
 		}
 
 	//triangle
 		for (int i = 0; i < width; i++) {
-			cout << string(i, ' ');
 			int astr = i * 2;
 			int subtract = width - astr;
-			cout << string(subtract, '*') << endl;
+			if (subtract > 0) {
+				cout << string(i, ' ');
+				cout << string(subtract, '*') << endl;
+			}
 	}
 
 }
@@ -104,3 +107,6 @@ void question9() {
 
 
 }
+
+
+
